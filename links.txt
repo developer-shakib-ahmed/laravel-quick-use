@@ -1,16 +1,27 @@
 [composer commands]
-composer create-project laravel/laravel app-name
+composer create-project laravel/laravel klassy-cafe
 composer update
 
 
-[php artisan commands]
-=> php artisan make:controller controllerName
+                                                                                                   
+[artisan make commands]
+=> php artisan make:controller ControllerName
 
 => php artisan make:model SingularNameOfTable
 
-=> php artisan make:middleware middlewareName
+=> php artisan make:middleware MiddlewareName
 
-=> php artisan make:component componentName
+=> php artisan make:component ComponentName
+
+=> php artisan make:factory FactoryName
+
+=> php artisan make:seeder SeederName
+
+=> php artisan db:seed --class=DatabaseSeeder
+
+
+
+[artisan migration commands]
 
 => php artisan make:migration create_tableName_table
 
@@ -20,9 +31,30 @@ composer update
 
 => php artisan migrate:rollback --step 3
 
-=> php artisan migrate:refresh
+=> php artisan migrate:refresh [Don't Use: remove all previous data from table]
+
+
+
+[jetstream & livewire - login & registration commands]
+=> composer require laravel/jetstream
+=> php artisan jetstream:install livewire
+=> npm install
+=> npm run dev
+=> php artisan migrate
+
+
+
+[artisan livewire commands]
+=> php artisan make:livewire componentName
 
 
 
 [Links]
+
 https://laravel.com/docs/
+
+https://github.com/fzaninotto/Faker
+
+https://github.com/jeroennoten/AdminLTE
+
+https://templatemo.com/
