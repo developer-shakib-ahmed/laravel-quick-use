@@ -1,9 +1,9 @@
 <?php 
 /**
- * Laravel Insert Query
+ * Laravel Insert Query using DB class
  */
 DB:table('users')->insert([
-  '' => '',
+  'column_name' => 'Value',
 ]);
 
 
