@@ -30,3 +30,8 @@
 @else
   <li><a href="{{ route('login') }}">Login</a></li>
 @endauth
+
+<!-- Show Pagination -->
+<div class="paginate">
+  {{ $data->links() }}
+</div>

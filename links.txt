@@ -27,7 +27,7 @@ composer update
 
 => php artisan migrate
 
-=> php artisan migrate:reset
+=> php artisan migrate:reset [Danger: remove all tables from database]
 
 => php artisan migrate:rollback --step 3
 
